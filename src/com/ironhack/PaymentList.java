@@ -7,6 +7,10 @@ import java.util.Date;
 public class PaymentList implements TransactionList{
     private ArrayList<Transaction> transactionList;
 
+    public PaymentList(ArrayList<Transaction> transactionList) {
+        this.transactionList = transactionList;
+    }
+
     public Transaction getLastTransaction() {
         return null;
     }
@@ -26,5 +30,9 @@ public class PaymentList implements TransactionList{
 
     public ArrayList<Transaction> getAllTransactions() {
         return null;
+    }
+
+    public ArrayList<Transaction> getTransactionList() {
+        return transactionList;
     }
 }
