@@ -16,7 +16,7 @@ public class PaymentList implements TransactionList{
     }
 
     public void addTransaction(Transaction transaction) {
-
+        transactionList.add(transaction);
     }
 
     public Transaction getTransactionByDate(Date date) {
@@ -29,7 +29,7 @@ public class PaymentList implements TransactionList{
     }
 
     public ArrayList<Transaction> getAllTransactions() {
-        return null;
+        return transactionList;
     }
 
     public ArrayList<Transaction> getTransactionList() {

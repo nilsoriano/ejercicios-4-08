@@ -15,5 +15,8 @@ public class Main {
         al1.add(t1);
         al1.add(t2);
         PaymentList pl1 = new PaymentList(al1);
+
+        Transaction t3 = new Transaction(acc1.getAccountNumber(), acc2.getAccountNumber(), 5, LocalDate.now());
+        pl1.addTransaction(t3);
     }
 }
