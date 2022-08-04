@@ -1,7 +1,6 @@
-package com.ironhack.interfaces;
+package com.ironhack;
 
-import com.ironhack.Transaction;
-import com.ironhack.TransactionList;
+import com.ironhack.interfaces.TransactionList;
 import java.util.ArrayList;
 import java.util.Date;
 

@@ -1,5 +1,5 @@
-package com.ironhack;
-
+package com.ironhack.interfaces;
+import com.ironhack.Transaction;
 import java.util.ArrayList;
 import java.util.Date;
 
