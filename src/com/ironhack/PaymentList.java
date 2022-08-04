@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class PaymentList implements TransactionList{
-    private ArrayList<Transaction> transactionArrayList;
+    private ArrayList<Transaction> transactionList;
 
     public Transaction getLastTransaction() {
         return null;
@@ -16,6 +16,11 @@ public class PaymentList implements TransactionList{
     }
 
     public Transaction getTransactionByDate(Date date) {
+        for (Transaction t : transactionList) {
+            if (t.getDate().equals(date)) {
+                return t;
+            }
+        }
         return null;
     }
 
